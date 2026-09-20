@@ -47,10 +47,6 @@ src/
    ```
 4. Scan the QR code with the **Expo Go** app (Android/iOS) to run it on your phone, or press `a` for an Android emulator / `i` for an iOS simulator.
 
-## 📸 Screenshots
-
-*(Add screenshots of the Home dashboard and History screen here)*
-
 ## 🎓 About
 
 This project was built as part of the App Development track of the [CodeAlpha](https://www.codealpha.tech) internship program.
