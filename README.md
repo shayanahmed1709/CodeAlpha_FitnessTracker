@@ -1,56 +1,59 @@
-# Welcome to your Expo app 👋
+# CodeAlpha_FitnessTracker
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A fitness tracking app for logging daily workouts and monitoring progress, developed as part of the **CodeAlpha App Development Internship** (Task 3).
 
-## Get started
+## 📱 Features
 
-1. Install dependencies
+- **Log activities manually** — activity type, duration, calories burned, and steps
+- **Today's Summary dashboard** with progress bars tracking steps, calories, and active minutes against daily goals
+- **7-day activity chart** showing calories burned per day at a glance
+- **Full activity history**, with the ability to delete any past log
+- All data saved locally on the device using AsyncStorage — no account or internet connection required
+- Clean, simple UI with two screens: Home (log + dashboard) and History (chart + past logs)
 
+## 🛠️ Tech Stack
+
+- **React Native** with **Expo**
+- **TypeScript**
+- **Expo Router** for file-based navigation between Home and History tabs
+- **AsyncStorage** (`@react-native-async-storage/async-storage`) for local data persistence
+
+## 📂 Project Structure
+
+```
+src/
+  app/
+    index.tsx     → Home screen (log activity + today's summary with progress bars)
+    history.tsx   → History screen (7-day chart + full activity log)
+    _layout.tsx   → Root layout and theming
+  components/
+    app-tabs.tsx  → Bottom tab navigation (Home / History)
+```
+
+## ▶️ How to Run
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/shayanahmed1709/CodeAlpha_FitnessTracker.git
+   cd CodeAlpha_FitnessTracker
+   ```
+2. Install dependencies:
    ```bash
    npm install
    ```
-
-2. Start the app
-
+3. Start the development server:
    ```bash
    npx expo start
    ```
+4. Scan the QR code with the **Expo Go** app (Android/iOS) to run it on your phone, or press `a` for an Android emulator / `i` for an iOS simulator.
 
-In the output, you'll find options to open the app in a
+## 📸 Screenshots
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+*(Add screenshots of the Home dashboard and History screen here)*
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🎓 About
 
-## Get a fresh project
+This project was built as part of the App Development track of the [CodeAlpha](https://www.codealpha.tech) internship program.
 
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-### Other setup steps
-
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---
+**Author:** Shayan Ahmed
